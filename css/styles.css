@@ -20,6 +20,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     font-size: 60px;
     color:#fff;
 }
@@ -30,6 +31,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     font-size: 60px;
     color:#fff;
 }
@@ -64,3 +66,39 @@ body{
     color:#fff;
     
 }
+
+.caixa1 .ombra1:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background: white;
+    opacity: 0.1;
+    
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+            transform: skew(30deg) scaleY(1) translate(0, 0);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+  }
+   .caixa2 .ombra2:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 20vw;
+    width: 20%;
+    height: 100%;
+    background: white;
+    opacity: 0.05;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+            transform: skew(30deg) scaleY(1) translate(0, 0);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+  } 
